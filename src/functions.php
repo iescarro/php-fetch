@@ -1,5 +1,21 @@
-
 <?php
+
+/**
+ * Sends an HTTP request to the specified URL using cURL.
+ *
+ * @param string $url The URL to send the request to.
+ * @param array $options An associative array of options for the request:
+ *     - 'method' (string): The HTTP method to use (e.g., 'GET', 'POST', etc.). Defaults to 'GET'.
+ *     - 'headers' (array): An associative array of headers to include in the request.
+ *     - 'body' (mixed): The body of the request. Can be a string or an array (which will be JSON-encoded).
+ * @param callable|null $callback An optional callback function to handle the response. The callback will receive an
+ *     associative array with the following keys:
+ *     - 'status' (int): The HTTP status code of the response.
+ *     - 'data' (mixed): The decoded JSON response data, or null if decoding fails.
+ *     - 'error' (string): An error message if the request fails, or null if successful.
+ *
+ * @return void
+ */
 
 namespace PhpFetch;
 

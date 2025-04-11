@@ -4,7 +4,10 @@
     "autoload": {
         "psr-4": {
             "PhpFetch\\": "src/"
-        }
+        },
+        "files": [
+            "src/functions.php"
+        ]
     },
     "license": "MIT",
     "authors": [
