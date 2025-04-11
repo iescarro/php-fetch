@@ -1,0 +1,17 @@
+{
+    "name": "iescarro/php-fetch",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "PhpFetch\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ian",
+            "email": "ian.escarro@gmail.com"
+        }
+    ],
+    "require": {}
+}
