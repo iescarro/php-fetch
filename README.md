@@ -40,7 +40,7 @@ fetch('https://jsonplaceholder.typicode.com/posts', [
 |----|------|-------------|
 | method | ```string``` | HTTP method (GET, POST, PUT, etc.) |
 | headers | ```array``` | Associative array of request headers |
-| body | ```array```	| string |
+| body | ```array or string ```	| Request payload. If an array is provided, it will be JSON-encoded automatically. |
 
 ## 🧠 Response Format
 
